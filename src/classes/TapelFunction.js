@@ -17,4 +17,4 @@ module.exports =
         
         refs: [ "Function", "function", "Func", "func" ]
         
-})
+});
