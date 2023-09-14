@@ -17,4 +17,4 @@ module.exports =
         
         refs: [ "AsyncFunction", "asyncFunction", "AsyncFunc", "asyncFunc" ]
         
-})
+});
