@@ -19,4 +19,35 @@ npm i paigeroid/tapel
 
 <br><br>
 
-### Use
+### Basic Use
+```js
+const { Class } = require('tapel');
+
+
+// creates a new class called Layer
+new Class("Layer", class {
+    constructor() {
+        this.data = [];
+    }
+});
+
+
+// creates a class called Data for the Layer class
+new Layer.Class("Data", class {
+    constructor(data) {
+        this.parent.data.push(data);
+    }
+});
+
+
+// creates a new layer
+let layer = new Layer();
+
+
+// adds "a" and "b" to the layer's data
+new Layer.Data("a");
+new Layer.Data("b");
+
+
+console.log(lobby.data); // ["a", "b"]
+```
