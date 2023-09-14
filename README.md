@@ -53,7 +53,7 @@ let lobby = new Lobby();
 
 
 // creates new players
-let player = new Player("a");
+let player = new lobby.Player("a");
 new lobby.Player("b");
 
 
