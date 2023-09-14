@@ -1,0 +1,35 @@
+{
+    "name": "tapel",
+    "version": "1.0.0",
+    "author": "paigeroid",
+    "description": "write this later",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/paigeroid/tapel.git"
+    },
+    "bugs": {
+        "url": "https://github.com/paigeroid/tapel/issues"
+    },
+    "license": {
+        "type": "MIT",
+        "url": "https://github.com/paigeroid/tapel/blob/main/LICENSE"
+    },
+    "dependencies": {
+        "stews": "latest"
+    },
+    "keywords": [
+        "nodejs",
+        "dataType",
+        "data",
+        "classes",
+        "class",
+        "types",
+        "type",
+        "stews",
+        "stew",
+        "soups",
+        "soup",
+    ],
+    "homepage": "https://github.com/paigeroid/tapel",
+    "main": "src/index.js"
+}
