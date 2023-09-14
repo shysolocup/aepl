@@ -2,7 +2,7 @@
     "name": "tapel",
     "version": "1.0.0",
     "author": "paigeroid",
-    "description": "write this later",
+    "description": "A Node.JS multi-layered class builder with built-in parent systems as well as better function and property makers",
     "repository": {
         "type": "git",
         "url": "https://github.com/paigeroid/tapel.git"
