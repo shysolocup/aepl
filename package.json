@@ -21,7 +21,7 @@
         "classes",
         "class",
         "types",
-        "type",
+        "type"
     ],
     "homepage": "https://github.com/paigeroid/tapel",
     "main": "src/index.js"
