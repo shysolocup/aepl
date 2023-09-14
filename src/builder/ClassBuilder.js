@@ -5,7 +5,7 @@ function ClassBuilder(c) {
     let files = fs.readdirSync(`src/classes`).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) );
 	
     files.forEach( (file) => {
-        let { refs, data } = require(`../makers/${file}`)();
+        let { refs, data } = require(`../makers/${file}`)(c);
 
         refs.forEach( (ref) => {
             Object.defineProperty(c, ref, data);
