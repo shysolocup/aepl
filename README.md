@@ -5,6 +5,7 @@
 
 tapel is a Node.JS multi-layered class builder with built-in parent systems as well as better function and property makers for easier development and modding support
   - Fully open source
+  - Lightweight
   - Easy to use
   - Compact
 
