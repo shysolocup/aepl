@@ -52,3 +52,13 @@ new layer.Data("b");
 
 console.log(layer.data); // ["a", "b"]
 ```
+
+<br><br>
+
+### Parts
+- Function: creates a new function for the class
+- AsyncFunction: creates a new async function for the class
+- Property: creates a new property for the class
+- Chore: creates a new chore for the class
+- AsyncChore: creates a new async chore for the class
+- Class: creates a new class inside of the class
