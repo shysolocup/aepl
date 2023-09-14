@@ -20,7 +20,7 @@ module.exports =
 					}
 				});
 					
-				return cl;
+				return new Function("cl", `return ${name} = cl`)(cl);
 			}
 		},
 
