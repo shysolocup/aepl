@@ -25,32 +25,40 @@ npm i paigeroid/tapel
 const { Class } = require('tapel');
 
 
-// creates a new class called Layer
-new Class("Layer", class {
+// creates a new class named Lobby
+new Class("Lobby", class {
     constructor() {
-        this.data = [];
+		this.players = [];
+        this.id = "id here";
     }
 });
 
 
-// creates a class called Data for the Layer class
-new Layer.Class("Data", class {
+// creates a new class for lobbies named Player
+new Lobby.Class("Player", class {
     constructor(data) {
-        this.parent.data.push(data);
+        this.parent.players.push(data);
     }
 });
 
 
-// creates a new layer
-let layer = new Layer();
+// creates a new property for players named lobbyId
+new Player.Property("lobbyId", function() {
+    return this.parent.id;
+});
 
 
-// adds "a" and "b" to the layer's data
-new layer.Data("a");
-new layer.Data("b");
+// creates a new lobby
+let lobby = new Lobby();
 
 
-console.log(layer.data); // ["a", "b"]
+// creates new players
+let player = new Player("a");
+new lobby.Player("b");
+
+
+console.log(player.lobbyId); // "id here"
+console.log(lobby.players); // ["a", "b"]
 ```
 
 <br><br>
