@@ -1,7 +1,7 @@
-
 module.exports = 
+
     
-c => {
+c => ({
         
         data: class TapelFunction {
             constructor(name, func) {
@@ -15,6 +15,6 @@ c => {
         },
 
         
-        refs: [ "Function", "function", "Func", "func"]
+        refs: [ "Function", "function", "Func", "func" ]
         
-}
+})
