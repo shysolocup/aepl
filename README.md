@@ -45,9 +45,9 @@ let layer = new Layer();
 
 
 // adds "a" and "b" to the layer's data
-new Layer.Data("a");
-new Layer.Data("b");
+new layer.Data("a");
+new layer.Data("b");
 
 
-console.log(lobby.data); // ["a", "b"]
+console.log(layer.data); // ["a", "b"]
 ```
