@@ -6,7 +6,7 @@ module.exports =
 
 (c) => ({
         
-        data: class TapelSubClass {
+        data: class NaplSubClass {
 		    constructor(name, value) {
 		        let cl = builder(
 			    	(value instanceof Function) ? value : class { constructor() { return value; } } 
