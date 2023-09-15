@@ -16,12 +16,18 @@
     },
     "keywords": [
         "nodejs",
+        "html",
         "dataType",
         "data",
         "classes",
         "class",
         "types",
-        "type"
+        "type",
+        "framework",
+        "lightweight",
+        "framework",
+        "backend",
+        "tapel"
     ],
     "homepage": "https://github.com/paigeroid/tapel",
     "main": "src/index.js"
