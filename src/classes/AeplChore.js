@@ -3,7 +3,7 @@ module.exports =
     
 (c) => ({
         
-        data: class NaplChore {
+        data: class AeplChore {
 		    constructor(/**/) {
 		        let args = Array.from(arguments);
 		        let name = args.shift();
