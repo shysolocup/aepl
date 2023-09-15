@@ -1,6 +1,7 @@
 # tapel
 <a href="https://www.npmjs.com/package/tapel"><img src="https://img.shields.io/npm/v/tapel?style=flat&color=red&logo=npm&logoColor=white" alt="version" />
 <a href="https://www.npmjs.com/package/tapel"><img src="https://img.shields.io/npm/dt/tapel?style=flat&color=green&logo=docusign&logoColor=white" alt="downloads" />
+<a href="https://github.com/paigeroid/tapel/wiki"><img src="https://img.shields.io/badge/docs-tapel?color=blue&logo=gitbook&logoColor=white" alt="docs" /></a>
 <img src="https://github.com/paigeroid/tapel/actions/workflows/publish-shit.yml/badge.svg" alt="publish">
 
 tapel is a Node.JS multi-layered class builder with built-in parent systems as well as better function and property makers for easier development and modding support inspired by Roblox's parent system
