@@ -64,7 +64,7 @@ console.log(lobby.players); // ["a", "b"]
 
 <br><br>
 
-### Parts
+### Classes
 - Function: creates a new function for the class
 - AsyncFunction: creates a new async function for the class
 - Property: creates a new property for the class
