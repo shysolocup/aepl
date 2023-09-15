@@ -1,10 +1,10 @@
-# napl
-<a href="https://www.npmjs.com/package/napl"><img src="https://img.shields.io/npm/v/napl?style=flat&color=red&logo=npm&logoColor=white" alt="version" />
-<a href="https://www.npmjs.com/package/napl"><img src="https://img.shields.io/npm/dt/napl?style=flat&color=green&logo=docusign&logoColor=white" alt="downloads" />
-<a href="https://github.com/paigeroid/napl/wiki"><img src="https://img.shields.io/badge/docs-tapel?color=blue&logo=gitbook&logoColor=white" alt="docs" /></a>
-<img src="https://github.com/paigeroid/napl/actions/workflows/publish-shit.yml/badge.svg" alt="publish">
+# aepl
+<a href="https://www.npmjs.com/package/aepl"><img src="https://img.shields.io/npm/v/aepl?style=flat&color=red&logo=npm&logoColor=white" alt="version" />
+<a href="https://www.npmjs.com/package/aepl"><img src="https://img.shields.io/npm/dt/aepl?style=flat&color=green&logo=docusign&logoColor=white" alt="downloads" />
+<a href="https://github.com/paigeroid/aepl/wiki"><img src="https://img.shields.io/badge/docs-tapel?color=blue&logo=gitbook&logoColor=white" alt="docs" /></a>
+<img src="https://github.com/paigeroid/aepl/actions/workflows/publish-shit.yml/badge.svg" alt="publish">
 
-napl is a Node.JS multi-layered class builder with built-in parent systems as well as better function and property makers for easier development and modding support inspired by Roblox's parent system
+aepl is a Node.JS multi-layered class builder with built-in parent systems as well as better function and property makers for easier development and modding support inspired by Roblox's parent system
   - Open source
   - Lightweight
   - Easy to use
@@ -13,17 +13,17 @@ napl is a Node.JS multi-layered class builder with built-in parent systems as we
 <br><br>
 
 ```console
-npm i napl
+npm i aepl
 ```
 ```console
-npm i paigeroid/napl
+npm i paigeroid/aepl
 ```
 
 <br><br>
 
 ### Basic Use
 ```js
-const { Class } = require('napl');
+const { Class } = require('aepl');
 
 
 // creates a new class named Lobby
