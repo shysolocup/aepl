@@ -5,7 +5,7 @@ module.exports =
     
 (c) => ({
         
-        data: class NaplAsyncChore {
+        data: class AeplAsyncChore {
 		    constructor(/**/) {
 		        let args = Array.from(arguments);
 		        let name = args.shift();
