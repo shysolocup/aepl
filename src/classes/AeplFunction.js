@@ -3,7 +3,7 @@ module.exports =
     
 (c) => ({
         
-        data: class NaplFunction {
+        data: class AeplFunction {
             constructor(name, func) {
                 let stuff = (func instanceof Function) ? func : function() { return func; }
         
