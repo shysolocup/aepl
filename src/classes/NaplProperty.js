@@ -3,7 +3,7 @@ module.exports =
     
 (c) => ({
         
-        data: class TapelProperty {
+        data: class NaplProperty {
 		    constructor(name, value, attributes={set:undefined, enumerable:false, configurable:false}) {
 		        let func = (value instanceof Function) ? value : function() { return value; };
 		        
