@@ -3,7 +3,7 @@ module.exports =
     
 (c) => ({
         
-        data: class TapelChore {
+        data: class TapeChore {
 		    constructor(/**/) {
 		        let args = Array.from(arguments);
 		        let name = args.shift();
