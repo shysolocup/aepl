@@ -16,7 +16,7 @@ napl is a Node.JS multi-layered class builder with built-in parent systems as we
 npm i napl
 ```
 ```console
-npm i napl
+npm i paigeroid/napl
 ```
 
 <br><br>
