@@ -28,7 +28,7 @@ const { Class } = require('tapel');
 // creates a new class named Lobby
 new Class("Lobby", class {
     constructor() {
-		this.players = [];
+	this.players = [];
         this.id = "id here";
     }
 });
