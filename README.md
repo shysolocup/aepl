@@ -5,7 +5,6 @@
 <img src="https://github.com/paigeroid/tapel/actions/workflows/publish-shit.yml/badge.svg" alt="publish">
 
 tapel is a Node.JS multi-layered class builder with built-in parent systems as well as better function and property makers for easier development and modding support inspired by Roblox's parent system
-  - HTML Support
   - Open source
   - Lightweight
   - Easy to use
