@@ -1,18 +1,18 @@
 {
-    "name": "napl",
+    "name": "aepl",
     "version": "1.0.0",
     "author": "paigeroid",
     "description": "A Node.JS multi-layered class builder with built-in parent systems as well as better function and property makers",
     "repository": {
         "type": "git",
-        "url": "https://github.com/paigeroid/napl.git"
+        "url": "https://github.com/paigeroid/aepl.git"
     },
     "bugs": {
-        "url": "https://github.com/paigeroid/napl/issues"
+        "url": "https://github.com/paigeroid/aepl/issues"
     },
     "license": {
         "type": "MIT",
-        "url": "https://github.com/paigeroid/napl/blob/main/LICENSE"
+        "url": "https://github.com/paigeroid/aepl/blob/main/LICENSE"
     },
     "keywords": [
         "nodejs",
@@ -27,8 +27,8 @@
         "lightweight",
         "framework",
         "backend",
-        "napl"
+        "aepl"
     ],
-    "homepage": "https://github.com/paigeroid/napl",
+    "homepage": "https://github.com/paigeroid/aepl",
     "main": "src/index.js"
 }
