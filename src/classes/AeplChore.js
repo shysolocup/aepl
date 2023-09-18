@@ -11,7 +11,7 @@ module.exports =
 		        
 		        let stuff =  new Function( ...args, string )
 		        
-		        Object.defineProperty( c.prototype, name, { value: stuff });
+		        c.prototype[name] = stuff
 		
 		        return stuff;
 		    }
