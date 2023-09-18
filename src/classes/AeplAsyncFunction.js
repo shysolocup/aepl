@@ -8,7 +8,7 @@ module.exports =
                 let stuff = (func instanceof Function) ? func : async function() { return func; }
 
                 Object.defineProperty(stuff, "name", { value: name });
-                Object.defineProperty( c.prototype, name, { value: stuff });
+                c.prototype[name] = stuff;
 
                 return stuff;
             }
