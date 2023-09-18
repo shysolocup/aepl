@@ -9,7 +9,7 @@ function ClassBuilder(c) {
 	
 	// adds classes
     classes.forEach( (file) => {
-        let { refs, data, name } = require(`../classes/${file}`)(c);
+        let { refs, data } = require(`../classes/${file}`)(c);
 
         refs.forEach( (ref) => {
             Object.defineProperty(c, ref, { value: data });
