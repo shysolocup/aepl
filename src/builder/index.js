@@ -13,6 +13,7 @@ function ClassBuilder(c) {
 
         refs.forEach( (ref) => {
             Object.defineProperty(c, ref, { value: data });
+			Object.defineProperty(c.prototype, ref, { value: data });
         });
     });
 
@@ -23,6 +24,7 @@ function ClassBuilder(c) {
 
         refs.forEach( (ref) => {
             Object.defineProperty(c, ref, { value: data });
+			Object.defineProperty(c.prototype, ref, { value: data });
         });
     });
 
