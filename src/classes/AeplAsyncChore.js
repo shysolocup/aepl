@@ -20,6 +20,9 @@ module.exports =
 		},
 
         
-        refs: [ "AsyncChore", "asyncChore" ]
+        refs: [ "AsyncChore", "asyncChore" ],
+
+	
+	name: "AsyncChore"
         
 });
