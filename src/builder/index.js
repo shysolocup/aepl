@@ -36,5 +36,5 @@ function ClassBuilder(c) {
 
 
 
-exports.push(ClassBuilder);
+exports.builder = ClassBuilder;
 module.exports = exports;
