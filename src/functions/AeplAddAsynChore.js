@@ -4,9 +4,8 @@ module.exports =
 (c) => ({
         
         data: function AeplAddAsyncChore(/**/) {
-                const { data } = require('../classes/AeplAsyncChore.js')(c);
-                return new data(...Array.from(arguments));
-            }
+            const { data } = require('../classes/AeplAsyncChore.js')(c);
+            return new data(...Array.from(arguments));
         },
 
         
