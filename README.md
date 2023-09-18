@@ -26,40 +26,72 @@ npm i paigeroid/aepl
 const { Class } = require('aepl');
 
 
-// creates a new class named Lobby
-new Class("Lobby", class {
-    constructor() {
-	this.players = [];
-        this.id = "id here";
-    }
+
+// main class
+new Class("Main", class {
+	constructor() {
+		this.data = [1, 2, 3];
+		this.layers = [];
+	}
 });
 
 
-// creates a new class for lobbies named Player
-new Lobby.Class("Player", class {
-    constructor(data) {
-        this.parent.players.push(data);
-    }
+
+// sub classes
+new Main.Class("Layer", class {
+	constructor() {
+		this.subs = [];
+		this.data = [4, 5, 6];
+		this.parent.layers.push(this);
+	}
 });
 
 
-// creates a new property for players named lobbyId
-new Player.Property("lobbyId", function() {
-    return this.parent.id;
+new Layer.Class("Sub", class {
+	constructor() {
+		this.data = [7, 8, 9]
+	}
 });
 
 
-// creates a new lobby
-let lobby = new Lobby();
+
+// properties
+new Layer.Property("main", function() {
+	return this.parent;
+});
 
 
-// creates new players
-let player = new lobby.Player("a");
-new lobby.Player("b");
+new Sub.Property("layer", function() {
+	return this.parent;
+});
 
 
-console.log(player.lobbyId); // "id here"
-console.log(lobby.players); // ["a", "b"]
+new Sub.Property("main", function() {
+	return this.parent.parent;
+});
+
+
+
+// stuff
+let main = new Main();
+
+console.log(this.main); // Main { layers: [], data: [1, 2, 3] }
+
+
+let layer = new main.Layer();
+
+
+console.log(layer); // Layer { subs: [], data: [4, 5, 6] }
+console.log(layer.main); // Main { layers: [ [Layer] ], data: [1, 2, 3] }
+
+
+let sub = new layer.Sub();
+
+
+console.log(sub); // Sub { data: [7, 8, 9] }
+console.log(sub.layer); // Layer { subs: [ [Sub] ], data: [4, 5, 6] }
+console.log(sub.main); // Main { layers: [ [Layer] ], data: [1, 2, 3] }
+
 ```
 
 <br><br>
