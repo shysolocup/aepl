@@ -50,6 +50,7 @@ new Main.Class("Layer", class {
 new Layer.Class("Sub", class {
 	constructor() {
 		this.data = [7, 8, 9]
+		this.parent.subs.push(this);
 	}
 });
 
