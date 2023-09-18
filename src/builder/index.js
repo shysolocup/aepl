@@ -1,5 +1,5 @@
 const fs = require('fs');
-let exports = {};
+let exp = {};
 
 
 function ClassBuilder(c) {
@@ -31,5 +31,5 @@ function ClassBuilder(c) {
 }
 
 
-exports.builder = ClassBuilder;
-module.exports = exports;
+exp.builder = ClassBuilder;
+module.exports = exp;
