@@ -23,6 +23,6 @@ module.exports =
         },
 
         
-        refs: [ "add", "create" ]
+        refs: [ "add", "create", "new", "New", "Add", "Create" ]
         
 });
