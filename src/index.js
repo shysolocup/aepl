@@ -1,4 +1,4 @@
-const builder = require('./builder');
+const { builder } = require('./builder');
 
 
 class Class {
