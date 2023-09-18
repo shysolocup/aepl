@@ -76,7 +76,7 @@ new Sub.Property("main", function() {
 // stuff
 let main = new Main();
 
-console.log(this.main); // Main { layers: [], data: [1, 2, 3] }
+console.log(main); // Main { layers: [], data: [1, 2, 3] }
 
 
 let layer = new main.Layer();
