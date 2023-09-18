@@ -4,7 +4,7 @@ module.exports =
     
 (c) => ({
         
-        data: function AeplAdd(/**/) {
+        data: function AeplAd(/**/) {
             let classes = fs.readdirSync(`node_modules/aepl/src/classes`).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
             
             let args = Array.from(arguments);
@@ -24,6 +24,6 @@ module.exports =
         },
 
         
-        refs: [ "add", "create", "new", "New", "Add", "Create" ]
+        refs: [ "add", "addNew", "new" ]
         
 });
