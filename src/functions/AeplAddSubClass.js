@@ -9,6 +9,6 @@ module.exports =
         },
 
         
-        refs: [ "addClass", "addSubClass", "addSubclass" ]
+        refs: [ "addClass", "addSubClass", "addSubclass", "addSub" ]
         
 });
