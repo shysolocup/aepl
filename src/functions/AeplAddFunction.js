@@ -10,6 +10,6 @@ module.exports =
         },
 
         
-        refs: [ "addFunction", "addFunc", "createFunction", "createFunc" ]
+        refs: [ "addFunction", "addFunc" ]
         
 });
