@@ -25,6 +25,6 @@ module.exports =
 		},
 
         
-        refs: [ "Class", "class", "Subclass", "SubClass", "subclass" ]
+        refs: [ "Class", "class", "Subclass", "SubClass", "subclass", "Sub", "sub" ]
         
 });
