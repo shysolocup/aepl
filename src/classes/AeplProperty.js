@@ -11,8 +11,8 @@ module.exports =
 		        Object.defineProperty(c.prototype, name, {
 		            get: func,
 		            set: attributes.set,
-		            enumerable: attributes.enumerable,
-		            configurable: attributes.configurable
+		            enumerable: (attributes.enumerable) ? attributes.enumerable : true,
+		            configurable: (attributes.configurable) ? attributes.configurable : true
 		        });
 		
 		        return func;
