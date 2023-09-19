@@ -9,6 +9,6 @@ module.exports =
         },
 
         
-        refs: [ "addAsyncChore", "addAChore" ]
+        refs: [ "addAsyncChore", "addAChore", "setAsyncChore", "setAChore" ]
         
 });
