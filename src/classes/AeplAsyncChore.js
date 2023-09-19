@@ -13,7 +13,9 @@ module.exports =
 		        
 		        let stuff =  new AsyncFunction( ...args, string )
 		        
-		        c.prototype[name] = stuff;
+		        Object.defineProperty(c.prototype, name, {
+	                    value: stuff
+	                });
 		
 		        return stuff;
 		    }
