@@ -9,6 +9,6 @@ module.exports =
         },
 
         
-        refs: [ "addFunction", "addFunc" ]
+        refs: [ "addFunction", "addFunc", "setFunction", "setFunc" ]
         
 });
