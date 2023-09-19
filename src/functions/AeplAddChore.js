@@ -9,6 +9,6 @@ module.exports =
         },
 
         
-        refs: [ "addChore", "createChore" ]
+        refs: [ "addChore", "setChore" ]
         
 });
