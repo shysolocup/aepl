@@ -9,6 +9,7 @@ module.exports =
         },
 
         
-        refs: [ "addAsyncFunction", "addAsyncFunc", "addAFunction", "addAFunc" ]
+        refs: [ "addAsyncFunction", "addAsyncFunc", "addAFunction", "addAFunc", 
+                "setAsyncFunction", "setAsyncFunc", "setAFunction", "setAFunc" ]
         
 });
