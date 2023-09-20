@@ -21,7 +21,7 @@ npm i paigeroid/aepl
 
 <br><br>
 
-### Basic Use
+### Example
 ```js
 const Class = require('aepl');
 
