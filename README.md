@@ -38,7 +38,7 @@ new Class("Main", class {
 
 
 // sub classes
-new Main.Class("Layer", class {
+Main.new("subclass", "Layer", class {
 	constructor() {
 		this.subs = [];
 		this.data = [4, 5, 6];
@@ -57,12 +57,12 @@ new Layer.Class("Sub", class {
 
 
 // properties
-new Layer.Property("main", function() {
+Layer.new("prop", "main", function() {
 	return this.parent;
 });
 
 
-new Sub.Property("layer", function() {
+Sub.newProp("layer", function() {
 	return this.parent;
 });
 
@@ -94,13 +94,3 @@ console.log(sub.layer); // Layer { subs: [ [Sub] ], data: [4, 5, 6] }
 console.log(sub.main); // Main { layers: [ [Layer] ], data: [1, 2, 3] }
 
 ```
-
-<br><br>
-
-### Classes
-- Function: creates a new function for the class
-- AsyncFunction: creates a new async function for the class
-- Property: creates a new property for the class
-- Chore: creates a new chore for the class
-- AsyncChore: creates a new async chore for the class
-- Class: creates a new class inside of the class
