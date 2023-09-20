@@ -13,4 +13,4 @@ class Class {
 Class = builder(Class);
 
 
-module.exports = { Class, builder };
+module.exports = Class
