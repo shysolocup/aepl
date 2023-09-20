@@ -4,7 +4,7 @@
 <a href="https://github.com/paigeroid/aepl/wiki"><img src="https://img.shields.io/badge/docs-tapel?color=blue&logo=gitbook&logoColor=white" alt="docs" /></a>
 <img src="https://github.com/paigeroid/aepl/actions/workflows/publish-shit.yml/badge.svg" alt="publish">
 
-aepl is a Node.JS multi-layered class package with built-in parenting systems that let you get info from classes above as well as better function and property makers for easier to read and understand development and modding support inspired by Roblox's parent system.
+aepl is a Node.JS multi-layered class package with built-in parenting systems that let you get info from classes above as well as better function and property makers for easier to read and understand development and modding support inspired by Roblox's Studio API.
   - Open source
   - Lightweight
   - Easy to use
