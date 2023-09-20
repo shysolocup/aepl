@@ -13,4 +13,9 @@ class Class {
 Class = builder(Class);
 
 
+Object.defineProperty(Class, "new", {
+    get() { return new Class(...Array.from(arguments)); }
+});
+
+
 module.exports = Class
