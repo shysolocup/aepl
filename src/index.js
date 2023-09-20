@@ -13,8 +13,12 @@ class Class {
 Class = builder(Class);
 
 
-Object.defineProperty(Class, "new", {
-    get() { return new Class(...Array.from(arguments)); }
+Object.defineProperty(Class, "init", {
+    get() {
+        return function ClassInit(/**/) {
+            return new this(...Array.from(arguments));
+        }
+    }
 });
 
 
