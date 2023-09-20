@@ -10,6 +10,7 @@ module.exports =
 
         
         refs: [ "addAsyncFunction", "addAsyncFunc", "addAFunction", "addAFunc", 
-                "setAsyncFunction", "setAsyncFunc", "setAFunction", "setAFunc" ]
+                "setAsyncFunction", "setAsyncFunc", "setAFunction", "setAFunc",
+                "newAsyncFunction", "newAsyncFunc", "newAFunction", "newAFunc" ]
         
 });
