@@ -26,7 +26,6 @@ npm i paigeroid/aepl
 const Class = require('aepl');
 
 
-
 // main class
 new Class("Main", class {
 	constructor() {
@@ -37,21 +36,38 @@ new Class("Main", class {
 
 
 
-// sub classes
+// subclasses
 Main.new("subclass", "Layer", class {
 	constructor() {
-		this.subs = [];
+		this.extras = [];
 		this.data = [4, 5, 6];
 		this.parent.layers.push(this);
 	}
 });
 
 
-new Layer.Class("Sub", class {
+Layer.new("subclass", "Extra", class {
 	constructor() {
 		this.data = [7, 8, 9]
-		this.parent.subs.push(this);
+		this.parent.extras.push(this);
 	}
+});
+
+
+
+// functions
+Main.new("func", "reverse", function() {
+    return this.data.reverse();
+});
+
+
+Layer.new("func", "reverse", function() {
+    return this.data.reverse();
+});
+
+
+Extra.new("func", "reverse", function() {
+    return this.data.reverse();
 });
 
 
@@ -62,19 +78,20 @@ Layer.new("prop", "main", function() {
 });
 
 
-Sub.newProp("layer", function() {
+Extra.new("prop", "layer", function() {
 	return this.parent;
 });
 
 
-new Sub.Property("main", function() {
+Extra.new("prop", "main", function() {
 	return this.parent.parent;
 });
 
 
 
-// stuff
+// examples
 let main = new Main();
+
 
 console.log(main); // Main { layers: [], data: [1, 2, 3] }
 
@@ -82,15 +99,19 @@ console.log(main); // Main { layers: [], data: [1, 2, 3] }
 let layer = new main.Layer();
 
 
-console.log(layer); // Layer { subs: [], data: [4, 5, 6] }
+console.log(layer); // Layer { extras: [], data: [4, 5, 6] }
 console.log(layer.main); // Main { layers: [ [Layer] ], data: [1, 2, 3] }
 
 
-let sub = new layer.Sub();
+let extra = new layer.Extra();
 
 
-console.log(sub); // Sub { data: [7, 8, 9] }
-console.log(sub.layer); // Layer { subs: [ [Sub] ], data: [4, 5, 6] }
-console.log(sub.main); // Main { layers: [ [Layer] ], data: [1, 2, 3] }
+console.log(extra); // Extra { data: [7, 8, 9] }
+console.log(extra.layer); // Layer { extras: [ [Extra] ], data: [4, 5, 6] }
+console.log(extra.main); // Main { layers: [ [Layer] ], data: [1, 2, 3] }
 
+
+console.log(main.reverse()); // [3, 2, 1]
+console.log(layer.reverse()); // [6, 5, 4]
+console.log(extra.reverse()); // [9, 8, 7]
 ```
