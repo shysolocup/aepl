@@ -23,7 +23,7 @@ npm i paigeroid/aepl
 
 ### Basic Use
 ```js
-const { Class } = require('aepl');
+const Class = require('aepl');
 
 
 
