@@ -3,6 +3,9 @@ let exp = {};
 
 
 function ClassBuilder(c) {
+	if (!c) c = class {};
+
+	
     let classes = fs.readdirSync(`node_modules/aepl/src/classes`).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
 	let functions = fs.readdirSync(`node_modules/aepl/src/functions`).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
 
