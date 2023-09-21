@@ -5,8 +5,8 @@ let exp = {};
 function ClassBuilder(c) {
 	if (c == undefined) c = class {};
 	
-	let classDir = require('../classes/dir');
-	let funcDir = require('../functions/dir');
+	let classDir = require('../classes/class_dir').replace("class_dir", "");
+	let funcDir = require('../functions/func_dir').replace("func_dir", "");
 	
     let classes = fs.readdirSync(classDir).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
 	let functions = fs.readdirSync().filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
