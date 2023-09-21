@@ -4,11 +4,14 @@ let exp = {};
 
 function ClassBuilder(c) {
 	if (c == undefined) c = class {};
+	
+	let classDir = require('../classes');
+	let funcDir = require('../functions');
+	
+    let classes = fs.readdirSync(classDir).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
+	let functions = fs.readdirSync().filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
 
 	
-    let classes = fs.readdirSync(`node_modules/aepl/src/classes`).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
-	let functions = fs.readdirSync(`node_modules/aepl/src/functions`).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
-
 	
 	// adds classes
     classes.forEach( (file) => {
@@ -19,6 +22,7 @@ function ClassBuilder(c) {
 			Object.defineProperty(c.prototype, ref, { value: data });
         });
     });
+
 
 	
 	// adds functions
@@ -31,6 +35,7 @@ function ClassBuilder(c) {
         });
     });
 
+	
 	
 	return c;
 }
