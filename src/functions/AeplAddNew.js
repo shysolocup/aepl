@@ -20,6 +20,12 @@ module.exports =
                 });
             });
 
+            if (!classes.includes(type)) {
+                let { data } = require('../classes/AeplProperty.js')(c);
+                args.unshift(type);
+                thing = data;
+            }
+
             return new thing(...args);
         },
 
