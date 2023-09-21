@@ -5,11 +5,11 @@ let exp = {};
 function ClassBuilder(c) {
 	if (c == undefined) c = class {};
 	
-	let classDir = require('../classes/funky_dir').replace("funky_dir", "");
-	let funcDir = require('../functions/funky_dir').replace("funky_dir", "");
+	let class_dir = require('../classes/funky_dir').replace("funky_dir", "");
+	let func_dir = require('../functions/funky_dir').replace("funky_dir", "");
 	
-    let classes = fs.readdirSync(classDir).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
-	let functions = fs.readdirSync().filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
+    let classes = fs.readdirSync(class_dir).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
+	let functions = fs.readdirSync(func_dir).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
 
 	
 	
