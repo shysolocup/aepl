@@ -3,7 +3,7 @@ const { builder } = require('./builder');
 
 class Class {
     constructor(name, c, autodefine=true) {
-        if (c == undefined) c = class {};
+        c = (c instanceof Function) ? c : (c == undefined) ? class {} : class { constructor() { return c; } };
 
 
         Object.defineProperty(c, "name", { value: name });
