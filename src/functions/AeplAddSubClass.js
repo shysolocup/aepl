@@ -11,6 +11,8 @@ module.exports =
         
         refs: [ "addClass", "addSubClass", "addSubclass", "addSub", 
                 "setClass", "setSubClass", "setSubclass", "setSub",
-                "newClass", "newSubClass", "newSubclass", "newSub" ]
+                "newClass", "newSubClass", "newSubclass", "newSub",
+                "init" 
+              ]
         
 });
