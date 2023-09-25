@@ -12,10 +12,13 @@ function ClassBuilder(c) {
                 return new Proxy(val, {
 
                     get(target, prop) {
-                        if (Object.getOwnPropertyNames(c.prototype).includes(prop)) {
+                        if (prop == "parent") { // if user is getting the parent
+                            return new c.prototype.parent.constructor();
+                        }
+                        else if (Object.getOwnPropertyNames(c.prototype).includes(prop)) { // if user is getting an aepl thing
                             return c.prototype[prop];
                         }
-                        else {
+                        else { // other
                             return target[prop];
                         }
                     }
