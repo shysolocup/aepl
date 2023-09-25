@@ -1,4 +1,4 @@
-# aepl 🍏
+# aepl  🍎
 <a href="https://www.npmjs.com/package/aepl"><img src="https://img.shields.io/npm/v/aepl?style=flat&color=red&logo=npm&logoColor=white" alt="version" />
 <a href="https://www.npmjs.com/package/aepl"><img src="https://img.shields.io/npm/dt/aepl?style=flat&color=green&logo=docusign&logoColor=white" alt="downloads" />
 <a href="https://github.com/paigeroid/aepl/wiki"><img src="https://img.shields.io/badge/documentation-tapel?color=blue&logo=gitbook&logoColor=white" alt="docs" /></a>
