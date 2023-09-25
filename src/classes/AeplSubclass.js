@@ -19,7 +19,8 @@ module.exports =
 
 						Object.defineProperty(cl.prototype, "parent", {
 							get() { return parent },
-							set(value) { return parent = value }
+							set(value) { return parent = value },
+							configurable: true
 						});
 						return cl;
 					}
