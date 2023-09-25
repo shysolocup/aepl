@@ -15,7 +15,12 @@ module.exports =
 		        if (cl instanceof Function) Object.defineProperty(cl, "name", { value: name });
 		        Object.defineProperty(c.prototype, name, { 
 					get() {
-						cl.prototype.parent = this;
+						var parent = this;
+
+						Object.defineProperty(cl.prototype, "parent", {
+							get() { return parent },
+							set(value) { return parent = value }
+						});
 						return cl;
 					}
 				});
