@@ -9,6 +9,8 @@ module.exports =
         },
 
         
-        refs: [ "addChore", "setChore", "newChore" ]
+        refs: [ "addChore", "addCh",
+                "setChore", "setCh",
+                "newChore", "newCh" ]
         
 });
