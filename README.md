@@ -24,7 +24,7 @@ npm i paigeroid/aepl
 
 
 ### Uses
-aepl makes classes layered meaning that you can have multiple classes inside of eachother and access upper layers using parents
+aepl makes classes layered meaning that you can have multiple classes inside of eachother and access upper classes using parents
 ```js
 const Class = require('aepl');
 
