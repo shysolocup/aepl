@@ -12,7 +12,7 @@ module.exports =
 			    	(value instanceof Function) ? value : (value == undefined) ? class {} : value
 			    );
 		
-		        Object.defineProperty(cl, "name", { value: name });
+		        if (cl instanceof Function) Object.defineProperty(cl, "name", { value: name });
 		        Object.defineProperty(c.prototype, name, { 
 					get() {
 						cl.prototype.parent = this;
