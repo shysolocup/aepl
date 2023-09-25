@@ -1,8 +1,8 @@
 {
     "name": "aepl",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "author": "paigeroid",
-    "description": "A Node.JS multi-layered class package with built-in parenting systems that let you get info from classes above as well as better function and property makers for easier to read and understand development and modding support inspired by Roblox's Studio API.",
+    "description": "A Node.JS multi-layered class creation package with built-in parenting systems that let you get info from classes above as well as better function and property makers for easier to read and understand development and modding support inspired by Roblox's Studio API.",
     "repository": {
         "type": "git",
         "url": "https://github.com/paigeroid/aepl.git"
