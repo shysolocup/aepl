@@ -9,8 +9,8 @@ module.exports =
         },
 
         
-        refs: [ "addProperty", "addProp", 
-                "setProperty", "setProp",
-                "newProperty", "newProp" ]
+        refs: [ "addProperty", "addProp", "addP", 
+                "setProperty", "setProp", "setP",
+                "newProperty", "newProp", "newP" ]
         
 });
