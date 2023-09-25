@@ -6,7 +6,7 @@ class Class {
         let cl = (c instanceof Function) ? c : (c == undefined) ? class {} : c;
 
 
-        Object.defineProperty(cl, "name", { value: name });
+        if (cl instanceof Function) Object.defineProperty(cl, "name", { value: name });
     	cl = builder(cl);
     	
         
