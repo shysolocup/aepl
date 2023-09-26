@@ -9,7 +9,7 @@ module.exports =
         data: class AeplSubclass {
 		    constructor(name, value) {
 		        let cl = builder(
-			    	(value instanceof Function) ? value : (value == undefined) ? class {} : value
+			    	(value instanceof Function) ? value : (value == undefined) ? class {} : class { constructor() { return value }}
 			    );
 		
 		        if (cl instanceof Function) Object.defineProperty(cl, "name", { value: name });
