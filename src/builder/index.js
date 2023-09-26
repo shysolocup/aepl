@@ -13,7 +13,9 @@ function ClassBuilder(c) {
 
                     get(target, prop) {
                         if (prop == "parent") { // if user is getting the parent
-                            return new c.prototype.parent.constructor();
+                            try {
+                                return new c.prototype.parent.constructor();
+                            } catch(e) { return undefined; }
                         }
                         else if (Object.getOwnPropertyNames(c.prototype).includes(prop)) { // if user is getting an aepl thing
                             return c.prototype[prop];
