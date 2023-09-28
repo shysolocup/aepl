@@ -18,10 +18,25 @@ class Class {
 Class = builder(Class);
 
 
-Object.defineProperty(Class, "init", {
-    get() {
-        return function ClassInit(/**/) {
-            return new this(...Array.from(arguments));
+
+Object.defineProperties(Class, {
+    init: {
+        get() {
+            return function AeplClassInit(/**/) {
+                return new this(...Array.from(arguments));
+            }
+        }
+    },
+
+    
+    from: {
+        get() {
+            return function AeplClassFrom(/**/) {
+                let args = Array.from(arguments);
+                let cl = args.shift();
+                
+                return new this(cl.name, cl, ...args);
+            }
         }
     }
 });
