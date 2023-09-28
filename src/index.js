@@ -35,7 +35,7 @@ Object.defineProperties(Class, {
                 let args = Array.from(arguments);
                 let cl = args.shift();
                 
-                return new this(cl.name, cl, ...args);
+                return new this( (cl.name) ? cl.name : "Unnamed", cl, ...args);
             }
         }
     }
