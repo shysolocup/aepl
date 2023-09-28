@@ -4,9 +4,9 @@ module.exports =
     
 (c) => ({
     
-        data: function AeplSetName(name) {
+        data: function AeplSetName(name, autodefine) {
             Object.defineProperty(c, "name", { value: name });
-            return new Function("cl", `return ${name} = cl`)(c);
+            if (autodefine) return new Function("cl", `return ${name} = cl`)(c);
         },
 
     
