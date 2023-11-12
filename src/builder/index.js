@@ -1,3 +1,4 @@
+const util = require('util');
 const fs = require('fs');
 let exp = {};
 
@@ -34,6 +35,16 @@ function ClassBuilder(c) {
 			Object.defineProperty(c.prototype, ref, { value: data });
         });
     });
+
+
+
+	// adds inspect
+	function insp(...args) {
+		return util.inspect(this, ...args);
+	}
+	
+    Object.defineProperty(c, "inspect", { get: insp });
+	Object.defineProperty(c.prototype, "inspect", { get: insp });
 
 	
 	
