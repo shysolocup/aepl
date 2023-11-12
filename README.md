@@ -1,8 +1,8 @@
 # aepl  🍎
 <a href="https://www.npmjs.com/package/aepl"><img src="https://img.shields.io/npm/v/aepl?style=flat&color=red&logo=npm&logoColor=white" alt="version" />
 <a href="https://www.npmjs.com/package/aepl"><img src="https://img.shields.io/npm/dt/aepl?style=flat&color=green&logo=docusign&logoColor=white" alt="downloads" />
-<a href="https://github.com/paigeroid/aepl/wiki"><img src="https://img.shields.io/badge/documentation-tapel?color=blue&logo=gitbook&logoColor=white" alt="docs" /></a>
-<img src="https://github.com/paigeroid/aepl/actions/workflows/publish-shit.yml/badge.svg" alt="publish">
+<a href="https://github.com/paishee/aepl/wiki"><img src="https://img.shields.io/badge/documentation-tapel?color=blue&logo=gitbook&logoColor=white" alt="docs" /></a>
+<img src="https://github.com/paishee/aepl/actions/workflows/publish-shit.yml/badge.svg" alt="publish">
 
 aepl is a Node.JS multi-layered class creation package with built-in parenting systems that let you get info from classes above as well as better function and property makers for easier to read and understand development and modding support inspired by Roblox's Studio API.
   - Open source
@@ -16,7 +16,7 @@ aepl is a Node.JS multi-layered class creation package with built-in parenting s
 npm i aepl
 ```
 ```console
-npm i paigeroid/aepl
+npm i paishee/aepl
 ```
 
 
