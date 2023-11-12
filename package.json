@@ -1,6 +1,6 @@
 {
     "name": "aepl",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "author": "paigeroid",
     "description": "A Node.JS multi-layered class creation package with built-in parenting systems that let you get info from classes above as well as better function and property makers for easier to read and understand development and modding support inspired by Roblox's Studio API.",
     "repository": {
