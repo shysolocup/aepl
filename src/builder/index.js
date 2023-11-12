@@ -40,7 +40,7 @@ function ClassBuilder(c) {
 
 	// adds inspect
 	function insp() {
-		return util.inspect(this, { color: true });
+		return util.inspect(this, { colors: true });
 	}
 	
     Object.defineProperty(c, "__inspect", { get: insp });
