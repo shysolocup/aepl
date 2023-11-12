@@ -1,4 +1,5 @@
 const { builder } = require('./builder');
+const util = require('util');
 
 
 class Class {
@@ -37,6 +38,13 @@ Object.defineProperties(Class, {
                 
                 return new this( (cl.name) ? cl.name : "Unnamed", cl, ...args);
             }
+        }
+    },
+
+
+    inspect: {
+        value(c, settings={ colors: true } ) {
+            return util.inspect(c, settings);
         }
     }
 });
