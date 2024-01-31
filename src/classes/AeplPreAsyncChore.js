@@ -12,7 +12,8 @@ module.exports =
 		        let string = args.pop();
 		        
 		        let stuff =  new AsyncFunction( ...args, string )
-		        
+			    Object.defineProperty(stuff, "name", { value: name });
+				Object.defineProperty(stuff, "parent", { value: c });
 		        Object.defineProperty(c, name, {
 	                    value: stuff
 	                });
