@@ -3,9 +3,9 @@ module.exports =
     
 (c) => ({
         
-        data: function AeplAddSubclass(/**/) {
+        data: function AeplAddSubclass(..args) {
             const { data } = require('../classes/AeplSubclass.js')(c);
-            return new data(...Array.from(arguments));
+            return new data(...args);
         },
 
         
