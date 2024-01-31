@@ -3,9 +3,9 @@ module.exports =
     
 (c) => ({
         
-        data: function AeplAddFunction(/**/) {
+        data: function AeplAddFunction(...args) {
             const { data } = require('../classes/AeplFunction.js')(c);
-            return new data(...Array.from(arguments));
+            return new data(...args);
         },
 
         
