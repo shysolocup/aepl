@@ -23,8 +23,8 @@ Class = builder(Class);
 Object.defineProperties(Class, {
     init: {
         get() {
-            return function AeplClassInit(/**/) {
-                return new this(...Array.from(arguments));
+            return function AeplClassInit(...args) {
+                return new this(...args);
             }
         }
     },
@@ -32,8 +32,7 @@ Object.defineProperties(Class, {
     
     from: {
         get() {
-            return function AeplClassFrom(/**/) {
-                let args = Array.from(arguments);
+            return function AeplClassFrom(...args) {
                 let cl = args.shift();
                 
                 return new this( (cl.name) ? cl.name : "Unnamed", cl, ...args);
