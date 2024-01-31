@@ -3,9 +3,9 @@ module.exports =
     
 (c) => ({
         
-        data: function AeplAddProperty(/**/) {
+        data: function AeplAddProperty(...args) {
             const { data } = require('../classes/AeplProperty.js')(c);
-            return new data(...Array.from(arguments));
+            return new data(...args);
         },
 
         
