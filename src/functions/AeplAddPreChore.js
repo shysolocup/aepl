@@ -3,9 +3,9 @@ module.exports =
     
 (c) => ({
         
-        data: function AeplAddPreChore(/**/) {
+        data: function AeplAddPreChore(...args) {
             const { data } = require('../classes/AeplPreChore.js')(c);
-            return new data(...Array.from(arguments));
+            return new data(...args);
         },
 
         
