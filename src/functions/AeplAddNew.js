@@ -1,5 +1,5 @@
 const fs = require('fs');
-const class_dir = require('../classes/funky_dir');
+const class_dir = __dirname.replace("functions", "classes")
 
 
 module.exports = 
@@ -7,10 +7,9 @@ module.exports =
     
 (c) => ({
         
-        data: function AeplAddNew(/**/) {
+        data: function AeplAddNew(...args) {
             let classes = fs.readdirSync(class_dir).filter( file => ((file.endsWith('.js') || file.endsWith('.ts')) ));
             
-            let args = Array.from(arguments);
             let type = args.shift();
 
             let thing;
