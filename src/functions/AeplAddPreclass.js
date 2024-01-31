@@ -3,9 +3,9 @@ module.exports =
     
 (c) => ({
         
-        data: function AeplAddPreclass(/**/) {
+        data: function AeplAddPreclass(...args) {
             const { data } = require('../classes/AeplPreclass.js')(c);
-            return new data(...Array.from(arguments));
+            return new data(...args);
         },
 
         
