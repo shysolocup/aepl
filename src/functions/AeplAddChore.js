@@ -3,9 +3,9 @@ module.exports =
     
 (c) => ({
         
-        data: function AeplAddChore(/**/) {
+        data: function AeplAddChore(...args) {
             const { data } = require('../classes/AeplChore.js')(c);
-            return new data(...Array.from(arguments));
+            return new data(...args);
         },
 
         
