@@ -14,13 +14,6 @@ module.exports =
 			    );
 		
 		        if (cl instanceof Function) Object.defineProperty(cl, "name", { value: name });
-				Object.defineProperty(c.prototype, "extend", {
-					value(ext, ...args) {
-						let stuff = new ext(...args);
-						Object.assign(this, stuff);
-						util.inherits(this.constructor, stuff.constructor);
-					}
-				});
 		        Object.defineProperty(c.prototype, name, { 
 					get() {
 						var parent = this;
