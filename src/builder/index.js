@@ -45,8 +45,8 @@ function ClassBuilder(c) {
 		return util.inspect(this, { colors: true });
 	}
 	
-    Object.defineProperty(c, "__inspect", { get: insp });
-	Object.defineProperty(c.prototype, "__inspect", { get: insp });
+    Object.defineProperty(c, "__inspect", { get: insp, configurable: true });
+	Object.defineProperty(c.prototype, "__inspect", { get: insp, configurable: true });
 
 	
 	
