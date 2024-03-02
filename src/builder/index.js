@@ -21,8 +21,8 @@ function ClassBuilder(c) {
         let { refs, data } = require(`../classes/${file}`)(c);
 
         refs.forEach( (ref) => {
-            Object.defineProperty(c, ref, { value: data });
-			Object.defineProperty(c.prototype, ref, { value: data });
+            Object.defineProperty(c, ref, { value: data, configurable: true });
+			Object.defineProperty(c.prototype, ref, { value: data, configurable: true });
         });
     });
 
@@ -33,8 +33,8 @@ function ClassBuilder(c) {
         let { refs, data } = require(`../functions/${file}`)(c);
 
         refs.forEach( (ref) => {
-            Object.defineProperty(c, ref, { value: data });
-			Object.defineProperty(c.prototype, ref, { value: data });
+            Object.defineProperty(c, ref, { value: data, configurable: true });
+			Object.defineProperty(c.prototype, ref, { value: data, configurable: true });
         });
     });
 
