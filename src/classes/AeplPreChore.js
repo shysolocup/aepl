@@ -13,7 +13,8 @@ module.exports =
 		        Object.defineProperty(stuff, "name", { value: name, configurable: true });
 				Object.defineProperty(stuff, "parent", { value: c, configurable: true });
 		        Object.defineProperty(c, name, {
-	                    value: stuff
+	                    value: stuff,
+						configurable: true
 	                });
 		
 		        return stuff;
