@@ -1,4 +1,4 @@
-NOTE: this example uses [stews](https://github.com/paigeroid/stews)
+NOTE: this example uses [stews](https://github.com/shysolocup/stews)
 
 <br>
 

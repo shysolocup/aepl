@@ -2,5 +2,5 @@
 npm i aepl
 ```
 ```console
-npm i paishee/aepl
+npm i shysolocup/aepl
 ```

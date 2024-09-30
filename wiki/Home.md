@@ -3,6 +3,6 @@
 
 Welcome to the aepl wiki pages, where you can find documentation about pretty much everything.<br><br>
 
-If you have any issues, bugs or suggestions report them [here](https://github.com/paigeroid/aepl/issues)
+If you have any issues, bugs or suggestions report them [here](https://github.com/shysolocup/aepl/issues)
 
 </div>
